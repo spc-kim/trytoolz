@@ -12,7 +12,7 @@ def is_equal(a, b):
     Returns:
         bool: True if a is equal to b, False otherwise
     """
-    pass
+    return a == b
 
 def greater_than(a, b):
     """
@@ -25,7 +25,7 @@ def greater_than(a, b):
     Returns:
         bool: True if a greater than b, False otherwise
     """
-    pass
+    return a > b
 
 def less_than(a, b):
     """
@@ -38,7 +38,7 @@ def less_than(a, b):
     Returns:
         bool: True if a less than b, False otherwise
     """
-    pass
+    return a < b
 
 def greater_than_or_equal_to(a, b):
     """
@@ -51,7 +51,7 @@ def greater_than_or_equal_to(a, b):
     Returns:
         bool: True if a is greater than or equal to b, False otherwise
     """
-    pass
+    return a >= b
 
 def less_than_or_equal_to(a, b):
     """
@@ -64,7 +64,7 @@ def less_than_or_equal_to(a, b):
     Returns:
         bool: True if a is less than or equal to b, False otherwise
     """
-    pass
+    return a <= b
 
 def falsy_or_truthy(value):
     """
@@ -76,7 +76,10 @@ def falsy_or_truthy(value):
     Returns:
         str: "truthy" if value is truthy, "falsy" if value is falsy
     """
-    pass
+    if value:
+        return "truthy"
+    else:
+        return "falsy"
 
 def both(a, b):
     """
@@ -89,7 +92,10 @@ def both(a, b):
     Returns:
         bool: True if both a and b are truthy, False otherwise
     """
-    pass
+    if a and b:
+        return True
+    else:
+        return False
 
 def either(a, b):
     """
@@ -102,6 +108,7 @@ def either(a, b):
     Returns:
         bool: True if either a or b is truthy, False otherwise
     """
-    pass
-
-
+    if a or b:
+        return True
+    else:
+        return False
